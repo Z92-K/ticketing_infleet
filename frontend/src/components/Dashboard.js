@@ -100,35 +100,6 @@ const Dashboard = () => {
           console.error(error);
         }
   };
-  // const handleDelete = async (ticketNumber) => {
-  //   const updatedTickets = tickets.map((ticket) =>
-  //     ticket.ticketNumber === ticketNumber
-  //       ? { ...ticket, deletedDate: new Date().toISOString() }
-  //       : ticket
-  //   );
-
-  //   try {
-  //     const response = await fetch('http://localhost:5000/api/tickets', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         ...updatedTickets,
-  //       }),
-  //     });
-
-  //     if (response.ok) {
-  //       const data = await response.json();
-  //       console.log(data.message);
-  //       // Update state or perform other actions as needed
-  //     } else {
-  //       console.error('Failed to create ticket');
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
 
   return (
     <div className="home-page">
